@@ -1,0 +1,15 @@
+---
+
+- hosts: scrapy
+  become: yes
+  become_user: vagrant
+  tasks:
+    - name: Clone roles in the ansible playbook
+      git:
+        repo: "https://github.com/tovletoglou/{{ item }}.git"
+        dest: "/home/vagrant/ansible-playbook-scrapy/roles/{{ item }}"
+      with_items:
+        - ansible-role-dotfiles
+        - ansible-role-git
+        - ansible-role-initialize
+        - ansible-role-yum-repos

@@ -1,0 +1,25 @@
+---
+
+
+- hosts: scrapy
+  become: yes
+  roles:
+    - ansible-role-yum-repos
+    - ansible-role-initialize
+    - ansible-role-git
+    - ansible-role-dotfiles
+    - ansible-role-scrapy
+  vars:
+    dotfile_users:
+    - {
+        name: root,
+        dest: /root,
+        gitname: GIT_ROOT_NAME,
+        gitmail: ROOT@EMAIL
+      }
+    - {
+        name: vagrant,
+        dest: /home/vagrant,
+        gitname: GIT_VAGRANT_NAME,
+        gitmail: VAGRANT@EMAIL
+      }
