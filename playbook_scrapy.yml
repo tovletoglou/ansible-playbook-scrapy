@@ -1,6 +1,5 @@
 ---
 
-
 - hosts: scrapy
   become: yes
   roles:

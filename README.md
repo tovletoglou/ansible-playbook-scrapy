@@ -1,6 +1,6 @@
 # Ansible playbook for Scrapy on CentOS 7
 
-This is an Ansible playbook to setup Scrapy on a Vagrant.
+This is an Ansible playbook to setup Scrapy on CentOS 7.
 
 For more information about the Vagrant machines see [vagrant-scrapy](https://github.com/tovletoglou/vagrant-scrapy).
 

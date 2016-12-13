@@ -13,3 +13,4 @@
         - ansible-role-git
         - ansible-role-initialize
         - ansible-role-yum-repos
+        - ansible-role-scrapy
