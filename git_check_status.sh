@@ -5,7 +5,7 @@
 # directory.
 
 # Master ansible playbook directory.
-DIRECTORY=~/ansible-playbook-aegir-centos/
+DIRECTORY=~/ansible-playbook-scrapy/
 
 # Check the playbook status.
 if [[ $(git --git-dir="$DIRECTORY".git --work-tree=$DIRECTORY status -s) ]]; then
