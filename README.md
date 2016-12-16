@@ -12,18 +12,24 @@ Tested CentOS 7
 
 Clone this project
 
-    git clone https://github.com/tovletoglou/ansible-playbook-scrapy.git
+```
+git clone https://github.com/tovletoglou/ansible-playbook-scrapy.git
+```
 
-Run the playbook `playbook_ansible.yml`. This one will get all the roles and put them in roles/ sub-directory (roles are not uploaded to ansible galaxy yet).
+Run the playbook `playbook_ansible.yml`. This one will get all the roles and put them in `roles/` sub-directory (roles are not uploaded to ansible galaxy yet).
 
-    ansible-playbook -i hosts playbook_ansible.yml
+```
+ansible-playbook -i hosts playbook_ansible.yml
+```
 
-Run the actual playbook `playbook_scrapy.yml` in order to provision the servers.
+Run the actual playbook `playbook_scrapy.yml` in order to provision the server.
 
-    ansible-playbook -i hosts playbook_scrapy.yml
+```
+ansible-playbook -i hosts playbook_scrapy.yml
+```
 
 ## Developer information
 
-The sub-directories in the `callback_plugins` folder are git projects integrated with the [git-subrepo](https://github.com/ingydotnet/git-subrepo). You can recognize them by the `.gitrepo` file.
+The sub-directories in the `callback_plugins` directory are git projects integrated with the [git-subrepo](https://github.com/ingydotnet/git-subrepo). You can recognize them by the `.gitrepo` file.
 
 Do not commit changes of the sub-projects on the main project.
