@@ -8,6 +8,8 @@
     - ansible-role-git
     - ansible-role-dotfiles
     - ansible-role-scrapy
+    - ansible-role-java
+    - ansible-role-elasticsearch
   vars:
     dotfile_users:
     - {
@@ -22,3 +24,7 @@
         gitname: GIT_VAGRANT_NAME,
         gitmail: VAGRANT@EMAIL
       }
+    elasticsearch_cluster_name: ansible-elastic-cluster
+    elasticsearch_host: 192.168.33.100
+    elasticsearch_kibana_host: 192.168.33.100
+    elasticsearch_kibana_bind_url: "http://192.168.33.100:9200"
