@@ -1,6 +1,6 @@
 ---
 
-- hosts: scrapy
+- hosts: ansible
   become: yes
   become_user: vagrant
   tasks:

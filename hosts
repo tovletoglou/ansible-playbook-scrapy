@@ -1,2 +1,13 @@
+[vagrant]
+ansible.dev
+scrapy.dev
+elastic1.dev
+
+[ansible]
+ansible.dev
+
 [scrapy]
 scrapy.dev
+
+[elastic]
+elastic1.dev
